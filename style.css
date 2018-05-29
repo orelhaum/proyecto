@@ -1,0 +1,40 @@
+        #myHeader {
+        background-color: rgb(255, 221, 71);
+        color: black;
+        padding: 40px;
+        text-align: center;
+        }
+        .myMenu {
+        background-color: lemonchiffon;
+        color: black;
+        padding: 10px;
+        text-align: center;
+        }
+    
+        #myLastNews {
+        background-color: orangered;
+        color: white;
+        padding: 10px;
+        text-align: center;
+        }
+
+        #myBestOptions {
+        background-color: rgb(0, 98, 255);
+        color: white;
+        padding: 10px;
+        text-align: center;
+        }
+        #SectionMain 
+        {
+            background-color: rgb(28, 13, 226);
+            color: rgb(0, 0, 0);
+            padding: 10px;
+            text-align: center;
+            }
+        #SectionFooter 
+            {
+                background-color: rgb(226, 13, 41);
+                color: rgb(0, 0, 0);
+                padding: 10px;
+                text-align: center;
+                }
