@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Perfil del usuario
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <script src="main.js"></script>
+</head>
+<script defer>
+  function loaded() {
+    document.getElementById("files").onchange = function () {
+      var reader = new FileReader();
+
+      reader.onload = function (e) {
+        // get loaded data and render thumbnail.
+        document.getElementById("image").src = e.target.result;
+      };
+
+      // read the image file as a data URL.
+      reader.readAsDataURL(this.files[0]);
+    };
+  }
+</script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+" crossorigin="anonymous"></script>
+
+<body onload="loaded()">
+  <header id="myHeader" class="header">
+    <p>Cabecera de la web que incluye redes sociales, logo y buscador</p>
+
+  </header>
+  <div class="row">
+    <nav>
+      <div class="col-3 col-s-2 menu">
+        <ul>
+          <li>
+            <a href="index.html">Inicio</a>
+          </li>
+          <li>
+            <a href="user_info.html" class="myMenu">Perfil Usuario</a>
+          </li>
+          <li>
+            <a href="comprar.html" class="myMenu">Comprar</a>
+          </li>
+          <li>
+            <a href="vender.html" class="myMenu">Vender</a>
+          </li>
+          <li>
+            <a href="historico.html" class="myMenu">Histórico</a>
+          </li>
+          <li>
+            <a href="moneda.html" class="myMenu">Moneda</a>
+          </li>
+          <li>
+            <a href="mensajes.html" class="myMenu">Mensajes</a>
+          </li>
+          <li>
+            <a href="registro.html" class="myMenu">Registro</a>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+
+    <div class="col-6 col-s-8 col-xs-12 article">
+      <form action="/action_page">
+        <fieldset>
+          <legend>Información personal</legend>
+          Usuario:
+          <br>
+          <input type="text" name="user" required="required" placeholder="Usuario" minlength="3" maxlength="20">
+          <br> Correo electrónico:
+          <br>
+          <input type="email" name="email" required="required" placeholder="Email">
+          <br> Fecha de Nacimiento:
+          <br>
+          <input type="date" name="birtDate">
+          <br> Dni:
+          <br>
+          <input type="string" name="dni" required="required" pattern="^[0-9]{8,8}[A-Za-z]$">
+          <br> Foto Dni:
+          <br> Parte delantera:
+          <input type="file" id="files" name="dniFront">
+          <br>
+          <img id="image" alt="prueba" />
+          <br> Parte trasera:
+          <input type="file" name="dniBack">
+          <br> Idioma:
+          <br>
+          <select name="languaje">
+            <option value="es-ES" selected="selected">Español</option>
+            <option value="en-US">Inglés</option>
+            <option value="pt-PT">Portugués</option>
+          </select>
+          <br>
+          <br>Teléfono:
+          <br>
+          <input type="text" name="preftel" pattern="^[0-9]$" minlength="3" maxlength="3" placeholder="Prefijo">
+          <input type="tel" name="usrtel" pattern="^[0-9]$" minlength="9" maxlength="12" placeholder="Teléfono">
+          <br>
+
+          <br>
+          <fieldset>
+            <legend>Datos de pago</legend>
+            Tarjeta Visa:
+            <br>
+            <input type="text" name="visaCard" required="required" pattern="^4[0-9]{12}(?:[0-9]{3})?$">
+            <br>
+          </fieldset>
+          <br>
+          <br>
+          <fieldset>
+            <legend>Cambio de contraseña</legend>
+            Contraseña actual:
+            <br>
+            <input type="password" name="oldPassword">
+            <br> Nueva Contraseña:
+            <br>
+            <input type="password" name="newPassword" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$">
+            <br> Repetir Contraseña actual:
+            <br>
+            <input type="password" name="newPassword2" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$">
+            <br>
+            <br>
+            <input type="submit" value="Guardar">
+          </fieldset>
+        </fieldset>
+      </form>
+
+    </div>
+
+    <div class="col-3 col-s-2 col-xs-12">
+      <div class="aside asideNo">
+        <h2>Compra!!!</h2>
+        <p>Compra ahora que está muy barato.</p>
+        <h2>Vende!!!!</h2>
+        <p>Vender ahora sería una buena opción.</p>
+        <h2>Dónalo!!</h2>
+        <p>Ya no necesitas tu puto dinero.</p>
+      </div>
+    </div>
+
+
+  </div>
+
+  <div class="footer">
+    <i class="fas fa-spinner fa-spin"></i>
+    <i class="fas fa-circle-notch fa-spin"></i>
+    <i class="fas fa-sync fa-spin"></i>
+    <i class="fas fa-cog fa-spin"></i>
+    <i class="fas fa-camera-retro fa-pulse"></i>
+    <i class="fas fa-camera-retro fa-spin"></i>
+  </div>
+
+</body>
+
+</html>
