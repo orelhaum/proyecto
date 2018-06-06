@@ -31,16 +31,19 @@
                         <i class="fab fa-angrycreative" style="font-size: 100px"></i>
                 </div>
                 <div class="col-sm-7">
-                        <span>Cabecera de la web que incluye redes sociales, logo y buscador</span>
+                  <div id="padre">
+                       <span id="centro">XXXXCabecera de la web que incluye redes sociales, logo y buscador</span> 
+                  </div>
                 </div>
-                <div class="col-sm-3">
-                        <div class="input-group">
-                                <div class="input-group-prepend">
-                                    <span class="input-group-text" id="basic-addon1">
-                                        <i class="fas fa-search"></i>
+                <div class="col-sm-3" >
+                  <div></div>
+                        <div class="input-group" >
+                                <div class="input-group-prepend" >
+                                    <span  class="input-group-text" id="basic-addon1" >
+                                        <i class="fas fa-search" ></i>
                                     </span>
                                 </div>
-                                <input type="text" class="form-control" placeholder="Buscar..." aria-label="Input group example" aria-describedby="btnGroupAddon">
+                                <input type="text" class="form-control" placeholder="Buscar..." aria-label="Input group example" aria-describedby="btnGroupAddon" >
                             </div>
                     </div>
             </div>
@@ -48,36 +51,17 @@
     </header>
 
     <div class="row">
-        <nav>
-            <div class="col-sm-3 col-md-3 menu">
-                <ul>
-                    <li>
-                        <a href="index.html">Inicio</a>
-                    </li>
-                    <li>
-                        <a href="user_info.html" class="myMenu">Perfil Usuario</a>
-                    </li>
-                    <li>
-                        <a href="comprar.html" class="myMenu">Comprar</a>
-                    </li>
-                    <li>
-                        <a href="vender.html" class="myMenu">Vender</a>
-                    </li>
-                    <li>
-                        <a href="historico.html" class="myMenu">Histórico</a>
-                    </li>
-                    <li>
-                        <a href="moneda.html" class="myMenu">Moneda</a>
-                    </li>
-                    <li>
-                        <a href="mensajes.html" class="myMenu">Mensajes</a>
-                    </li>
-                    <li>
-                        <a href="registro.html" class="myMenu">Registro</a>
-                    </li>
-
-                </ul>
-            </div>
+        <nav class="col-sm-3 col-md-3 menu">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                  <a class="dropdown-item"  href="user_info.html">Perfil Usuario</a>
+                  <a class="dropdown-item">Another action</a>
+                  <a class="dropdown-item" >Something else here</a>
+                </div>
+              </div>
         </nav>
         <div class="col-sm-6 col-md-6 menu">
             <h1>prueba de contenido</h1>
