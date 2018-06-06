@@ -1,58 +1,108 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Banco de Criptomonedas</title>
+    <title>Banco de CryptoMonedas - Home</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
+        crossorigin="anonymous"></script>
+
 </head>
+
 <body>
-
-<br>
-    <header id="myHeader">
-        <p>Cabecera de la web que incluye redes sociales, logo y buscador</p>
-
+    <header class="header">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-2">
+                        <i class="fab fa-angrycreative" style="font-size: 100px"></i>
+                </div>
+                <div class="col-sm-7">
+                        <span>Cabecera de la web que incluye redes sociales, logo y buscador</span>
+                </div>
+                <div class="col-sm-3">
+                        <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">
+                                        <i class="fas fa-search"></i>
+                                    </span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Buscar..." aria-label="Input group example" aria-describedby="btnGroupAddon">
+                            </div>
+                    </div>
+            </div>
+        </div>
     </header>
 
-    <nav>
-    </br>
-        <a href="index.html" class="myMenu">Inicio</a>
-        <a href="monedas.html" class="myMenu">Monedas</a>
-        <a href="comprar.html" class="myMenu">Comprar</a>
-        <a href="vender.html" class="myMenu">Vender</a>
-        <a href="mensajes.html" class="myMenu">Mensajes</a>
-        <a href="user_info.html" class="myMenu">Perfil Usuario</a>
-    </nav>
-    <main id="SectionMain">
-      <h1>Empeiza la página web</h1>
-        </br>
-        <h2>
-        <section id="myLastNews">Últimas noticias</section>
-    </br>
-        <section id="myBestOptions">Mejores opciones</section>
-      </h2> 
-    </br>
-</br>
-        <article>
-            <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis at nulla a elit laoreet laoreet. Mauris egestas sem quis lorem eleifend vehicula. Quisque auctor nunc eu tellus suscipit cursus. Vivamus eget urna condimentum, dapibus erat eu, fringilla ligula. Aliquam urna ligula, vulputate ut felis quis, tempor euismod justo. Nullam porta quam non accumsan gravida. Quisque id libero sed urna posuere cursus ac a quam.
+    <div class="row">
+        <nav>
+            <div class="col-sm-3 col-md-3 menu">
+                <ul>
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="user_info.html" class="myMenu">Perfil Usuario</a>
+                    </li>
+                    <li>
+                        <a href="comprar.html" class="myMenu">Comprar</a>
+                    </li>
+                    <li>
+                        <a href="vender.html" class="myMenu">Vender</a>
+                    </li>
+                    <li>
+                        <a href="historico.html" class="myMenu">Histórico</a>
+                    </li>
+                    <li>
+                        <a href="moneda.html" class="myMenu">Moneda</a>
+                    </li>
+                    <li>
+                        <a href="mensajes.html" class="myMenu">Mensajes</a>
+                    </li>
+                    <li>
+                        <a href="registro.html" class="myMenu">Registro</a>
+                    </li>
 
-                    Sed dignissim iaculis justo, sagittis laoreet tellus mollis vel. Phasellus tortor quam, consequat consequat massa vitae, aliquam accumsan nisl. Pellentesque eu volutpat nisi. Vestibulum malesuada venenatis metus, eleifend luctus felis rhoncus ac. Duis a laoreet diam. Quisque non neque vitae arcu varius pretium. Mauris ut lacus sit amet tortor congue tempus. Nunc odio odio, vehicula tincidunt ultrices id, malesuada vitae ipsum. Cras dapibus, elit ac euismod mollis, dolor purus congue nunc, ac varius lorem diam id eros. Aenean elit ligula, auctor ac augue a, placerat rhoncus massa. Nam vel diam vitae nibh imperdiet varius sed a turpis. Praesent luctus a felis in iaculis. Quisque nisi risus, suscipit vel ex in, sollicitudin tempus felis.</div>
-        </article>
+                </ul>
+            </div>
+        </nav>
+        <div class="col-sm-6 col-md-6 menu">
+            <h1>prueba de contenido</h1>
+            <p>iteointowenoweintointo</p>
+        </div>
+        <div class="col-sm-3 col-md-3 menu">
+            <div class="aside asideNo">
+                <h2>Compra!!!</h2>
+                <p>Compra ahora que está muy barato.</p>
+                <h2>Vende!!!!</h2>
+                <p>Vender ahora sería una buena opción.</p>
+                <h2>Dónalo!!</h2>
+                <p>Ya no necesitas tu puto dinero.</p>
+            </div>
+        </div>
+    </div>
 
-    </main>
-    </br>
-    <form action="/action_page">
-      <fieldset>
-        <legend>datos del usuario</legend>
-        Nombre</br>
-        <input type="text" name="nombre"></br>
-        Apellidos</br>
-        <input type="text" name="apellidos">
-      </fieldset>
-    </form> 
-    </br>
-    </br>
-    <footer id="SectionFooter">Información legal y contacto</footer>
+    <div class="footer">
+        <i class="fas fa-spinner fa-spin"></i>
+        <i class="fas fa-circle-notch fa-spin"></i>
+        <i class="fas fa-sync fa-spin"></i>
+        <i class="fas fa-cog fa-spin"></i>
+        <i class="fas fa-camera-retro fa-pulse"></i>
+        <i class="fas fa-camera-retro fa-spin"></i>
+    </div>
 </body>
+
 </html>
