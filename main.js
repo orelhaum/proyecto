@@ -208,7 +208,8 @@ function listarFondos(usuario,monedas){
     console.log(`${nombreMoneda}: ${usuario.fondos[nombreMoneda]} (${cantidaDolares}$)` );
   }
   console.log(`Total en cryptomendas: ${realCash}$`);
-  console.log(`Total en dinero real: ${usuario.realCash}$`);}
+  console.log(`Total en dinero real: ${usuario.
+    realCash}$`);}
 
 //función para obtener el precio último del BTC
 function obtenerPrecioBTC(){
